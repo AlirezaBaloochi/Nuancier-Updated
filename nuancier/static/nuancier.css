@@ -43,25 +43,9 @@ select {
 }
 
 h1, h2, h3 {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Montserrat', cursive;
 }
 
-body#index #mainNav li#indexTab a,
-body#contribute #mainNav li#contributeTab a,
-body#elections #mainNav li#electionsTab a,
-body#submissions #mainNav li#submissionsTab a,
-body#results #mainNav li#resultsTab a,
-body#admin #mainNav li#adminTab a {
-    background-color: #fff;
-    color: #444;
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-top-right-radius: 5px;
-    -moz-border-radius-topleft: 5px;
-    -moz-border-radius-topright: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    min-width:0px;
-}
 
 body#admin table {
     padding-top:2em;

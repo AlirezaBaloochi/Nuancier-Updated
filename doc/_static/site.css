@@ -1,5 +1,5 @@
 @import url("cloud.css");
-@import url("//fonts.googleapis.com/css?family=Comfortaa");
+@import url("//fonts.googleapis.com/css?family=Montserrat");
 
 .nuancier-logo span {
     background: url("nuancier.png") no-repeat scroll 50% 0 transparent;
@@ -10,7 +10,7 @@
   }
 
 h1.nuancier-logo {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: -10px;
     margin-bottom: 12px;
 }

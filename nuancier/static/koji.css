@@ -9,22 +9,20 @@
     Pierre-Yves Chibon <pingou@redhat.com>
 */
 
-html {
+/*html {
     min-width: 800px;
-}
+}*/
 
 body {
-    margin: 0px;
-    padding: 0px;
     font-size: small;
     font-family: "Liberation Sans","Lucida Grande", "Luxi Sans", "Bitstream Vera Sans", helvetica, verdana, arial, sans-serif;
     color: #666;
-    background: #fff url(header-bg.png) repeat-x;
+    /*background: #fff url(header-bg2.png) repeat-x;*/
 }
 
-a, a:visited, a:hover {
-    color: #0066CC;
-    text-decoration: none;
+a, a:hover {
+    color: #0066CC ;
+    text-decoration: none !important;
 }
 
 h4
@@ -34,8 +32,8 @@ h4
 }
 
 #wrap {
-    min-width: 750px;
-    max-width:1100px;
+    /*min-width: 750px;
+    max-width:1100px;*/
     margin-left:auto;
     margin-right:auto;
     padding: 0;
@@ -82,7 +80,8 @@ height:87px
 #kojiLogo {
     /* Used only for the koji logo icon */
     display:inline-block;
-    padding-top:8px;
+    /*margin-left: 4%;
+    margin-right: 1rem;*/
 }
 
 #PoweredByKojiLogo {
@@ -94,23 +93,26 @@ height:87px
 
 
 div#content {
-    margin: 0 20px;
-    margin-top:30px;
+    margin-left: 5%;
+    margin-right: 5%;
     clear: both;
 }
 
-p#footer {
-    padding-top: 40px;
-    margin-left: 15px;
-    line-height: 1.5em;
-    color: #999;
-    font-size: xx-small;
+#footer {
+    position:initial;
     clear: both;
+    font-size: small;
+    bottom: 0;  
+    overflow:hidden;
+    height: 60px;
+    width:100%;
+    background-color: #A9A9A9;
 }
 
 p#footer a {
     text-decoration: none;
 }
+
 
 .hide {
     display: none;
@@ -118,43 +120,6 @@ p#footer a {
 
 .disabled {
     color: #808080;
-}
-
-#mainNav {
-    font-size:16px;
-    font-weight:bold;
-    height: 30px;
-}
-
-#mainNav ul {
-    padding: 0px;
-    margin: 0px;
-    list-style-type: none;
-}
-
-#mainNav ul li {
-
-    float: left;
-
-}
-
-#mainNav ul li a {
-    display: block;
-    color: rgba(255,255,255,0.8);
-    text-decoration: none;
-    padding: 0.5em 1.5em;
-    font-size: 0.77em;
-    height: 1.5em;
-}
-
-#mainNav ul li:hover {
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-top-right-radius: 5px;
-    -moz-border-radius-topleft: 5px;
-    -moz-border-radius-topright: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    background-color:rgba(255,255,255,0.1);
 }
 
 body#summary #mainNav li#summaryTab a,
@@ -273,13 +238,8 @@ div.toggle {
     padding: 6px;
 }
 
-td.tree {
-
-}
-
 .tree span.root {
     font-weight: bold;
-
 }
 
 .tree ul {
@@ -412,14 +372,6 @@ tr.list-header th:last-child
     box-shadow:  1px 0 0 #ddd,0 -1px 0 #ddd,  0 1px 0 #ddd;
 }
 
-tr.row-even td.tree {
-
-}
-
-tr.row-even td.tree span.treeLabel {
-
-}
-
 .taskfree, .taskfree:visited, .taskfree:hover {
     color: #3300CC;
     background-color:#fff;
@@ -468,35 +420,66 @@ abbr {
     font-size: smaller;
 }
 
-span#loginInfo {
-    background-color: #ccc;
-    font-weight: bold;
+#loginInfo {
+    color: #fff;
+    background-color: #3c6eb4;
+    border-color: #3c6eb4;
+    border: 5px;
+    border-color: black;
     padding: 3px 15px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    -webkit-border-bottom-left-radius: 3px;
-    -webkit-border-bottom-right-radius: 3px;
-    -moz-border-radius-bottomleft: 3px;
-    -moz-border-radius-bottomright: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.5) inset, 0 1px 3px rgba(0, 0, 0, 0.5);
-    -mox-box-shadow: 0 10px 10px rgba(255, 255, 255, 0.5) inset, 0 1px 3px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0 10px 10px rgba(255, 255, 255, 0.5) inset, 0 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
 }
 
 .smaller {
     font-size: smaller;
 }
 
-.rpmheader {
-    /*font-family: monospace;
-    font-size: medium;
-    white-space: pre;*/
-}
-
 .error {
     color: red;
 }
 
+#fedmenu-main-button div.img{
+    background-image: url(fedmenu.svg) !important;
+}
+.fedmenu-button div.img{
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+}
+.masthead{
+    background-color: #ddd;
+    padding-right: 5%;
+    padding-left: 5%;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 0 10px 2px #ddd;
+    z-index: 999;
+    background-image: linear-gradient(to bottom,#eee 0%,#ddd 100%);
+}
+.nav-item:hover{
+    text-shadow: -.25px -.25px 0 white, 
+    .25px .25px white;
+}
+.logoutlink{
+    color:white !important;
+    font-weight: 700;
+}
+.logoutlink:hover{
+    color:white !important;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #3c6eb4 !important;
+    border-color: #3c6eb4 !important;
+}
+.nav-link{
+    font-weight: 700 !important;
+}
+
+@media only screen and (max-width: 600px) {
+    #mainNav {
+        margin-left: 20px;
+    }
+    #header {
+        margin-left: 20px;
+        }
+}
