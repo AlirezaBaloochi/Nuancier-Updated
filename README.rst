@@ -1,4 +1,4 @@
-Fedora Nuancier Updated Design
+A fresh look for Fedora Nuancier
 ========
 
 :Author: Pierre-Yves Chibon <pingou@pingoured.fr>
@@ -10,12 +10,10 @@ Nuancier is a web-based voting application for the supplementary
 wallpapers of Fedora.
 
 
-Get this project:
+Main project:
 -----------------
 On github: https://github.com/fedora-infra/nuancier
-
 Documentation: http://nuancier.rtfd.org
-
 
 Dependencies:
 -------------
